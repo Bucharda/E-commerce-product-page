@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-left">
+        <button class="menu-btn" aria-label="Open Menu">
+          <img src="images/icon-menu.svg" alt="">
+        </button>
+        <a href="#" class="logo">
+          <img src="images/logo.svg" alt="sneakers">
+        </a>
+        <nav class="nav-links">
+          <button class="close-btn" aria-label="Close Menu">
+            <img src="images/icon-close.svg" alt="">
+          </button>
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+      
+      <div class="nav-right">
+        <button class="cart-toggle" aria-label="View Cart">
+          <img src="images/icon-cart.svg" alt="">
+          <span class="cart-badge">3</span>
+        </button>
+        <div class="avatar">
+          <img src="images/image-avatar.png" alt="User Profile">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="product-container">
+    
+    <section class="product-gallery">
+      <div class="main-img-container">
+        <button class="slider-btn prev-btn" aria-label="Previous Image">
+          <img src="images/icon-previous.svg" alt="">
+        </button>
+        <img src="images/image-product-1.jpg" alt="Fall Limited Edition Sneakers" class="main-image">
+        <button class="slider-btn next-btn" aria-label="Next Image">
+          <img src="images/icon-next.svg" alt="">
+        </button>
+      </div>
+      
+      <div class="thumbnails">
+        <div class="thumb active"><img src="images/image-product-1-thumbnail.jpg" alt=""></div>
+        <div class="thumb"><img src="images/image-product-2-thumbnail.jpg" alt=""></div>
+        <div class="thumb"><img src="images/image-product-3-thumbnail.jpg" alt=""></div>
+        <div class="thumb"><img src="images/image-product-4-thumbnail.jpg" alt=""></div>
+      </div>
+    </section>
+
+    <section class="product-info">
+      <span class="company-tag">Sneaker Company</span>
+      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="product-desc">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="price-container">
+        <div class="current-price-box">
+          <span class="price">$125.00</span>
+          <span class="discount">50%</span>
+        </div>
+        <span class="original-price">$250.00</span>
+      </div>
+
+      <div class="purchase-actions">
+        <div class="quantity-selector">
+          <button type="button" aria-label="Decrease quantity">
+            <img src="images/icon-minus.svg" alt="">
+          </button>
+          <span class="qty-number">0</span>
+          <button type="button" aria-label="Increase quantity">
+            <img src="images/icon-plus.svg" alt="">
+          </button>
+        </div>
+        <button class="add-to-cart-btn">
+          <img src="images/icon-cart.svg" alt="" class="btn-icon">
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-dropdown">
+    <div class="cart-header">Cart</div>
+    <div class="cart-body">
+      <div class="cart-items">
+        <div class="cart-item">
+          <img src="images/image-product-1-thumbnail.jpg" alt="" class="cart-item-img">
+          <div class="cart-item-details">
+            <p class="item-name">Fall Limited Edition Sneakers</p>
+            <p class="item-pricing">$125.00 x 3 <span class="total-price">$375.00</span></p>
+          </div>
+          <button class="delete-btn" aria-label="Delete item">
+            <img src="images/icon-delete.svg" alt="">
+          </button>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
